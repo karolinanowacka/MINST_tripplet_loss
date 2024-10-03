@@ -14,6 +14,7 @@ train_data = dt.MNIST(
     )
 #debugging
 print(len(train_data))
+print(train_data[0])
 
 test_data = dt.MNIST(
     root=root, 
@@ -23,6 +24,9 @@ test_data = dt.MNIST(
     )
 #debugging
 print(len(test_data))
+
+#normalization
+
 
 train_data_loader = DataLoader(train_data, batch_size=64, shuffle=True)
 test_data_loader = DataLoader(test_data, batch_size=64, shuffle=True)
