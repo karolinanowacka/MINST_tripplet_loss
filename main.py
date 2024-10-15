@@ -1,12 +1,11 @@
 import torch
-import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
 import torch.nn as nn
 from torchvision import transforms
 import numpy as np
-from MNIST.TripleMNIST import TripleMNIST
-from MNIST.Trainer import Trainer
-from MNIST.CNN import CNN
+from TripleMNIST import TripleMNIST
+from Trainer import Trainer
+from CNN import CNN
 
 
 root = "/Users/karolinanowacka/Desktop/ML projects/SOLVRO/intro_task/MNIST_tripplet_loss"
